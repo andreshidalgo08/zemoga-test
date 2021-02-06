@@ -4,6 +4,13 @@
   --trans-blue: rgba(28, 187, 180, 0.65);
   --orange: #ffad1d;
   --trans-orange: rgba(255, 173, 29, 0.65);
+  --grey: #ebebeb;
+  --black: #333333;
+}
+
+* {
+  font-family: 'Lato', sans-serif;
+  color: var(--black);
 }
 
 @media screen and (min-width: 600px) and (max-width: 959px) {
