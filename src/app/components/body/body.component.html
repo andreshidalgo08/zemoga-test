@@ -1,14 +1,14 @@
 <div id="body">
   <div>Notification</div>
-  <div>
-    <p>Votes</p>
-    <!-- TODO: flex box wrap -->
-    <div>
-      <app-candidate
-          *ngFor="let candidate of candidates"
-          [candidate]="candidate"
-      ></app-candidate>
-    </div>
+
+  <p id="votes">Votes</p>
+
+  <div id="candidates">
+    <app-candidate
+        *ngFor="let candidate of candidates"
+        [candidate]="candidate"
+    ></app-candidate>
   </div>
+
   <div>Anyone Else?</div>
 </div>

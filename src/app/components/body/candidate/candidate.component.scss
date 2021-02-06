@@ -1,8 +1,10 @@
 #candidate {
-  width: 85vw;
-  height: 85vw;
-  max-width: 425px;
-  max-height: 425px;
+  width: 84vw;
+  height: 84vw;
+  //max-width: 425px;
+  //max-height: 425px;
+  min-width: 306px;
+  min-height: 306px;
   margin-bottom: 10px;
   background-position: center;
   background-repeat: no-repeat;
@@ -161,18 +163,60 @@
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 959px) {
-
+@media screen and (min-width: 600px) {
+  #candidate {
+    width: 70vw;
+    height: 70vw;
+    max-width: 425px;
+    max-height: 425px;
+  }
 }
 
-@media screen and (min-width: 960px) and (max-width: 1279px) {
+@media screen and (min-width: 720px) {
+  #candidate {
+    width: 42vw;
+    height: 42vw;
+    max-width: 500px;
+    max-height: 500px;
+    margin-bottom: 2vw;
+  }
 
+  #main {
+    #name {
+      font-size: calc(1.5em + 1vw);
+    }
+
+    #last-seen {
+      font-size: calc(0.3em + 1vw);
+    }
+
+    #description {
+      font-size: calc(0.5em + 1vw);
+    }
+
+    #voting-buttons {
+      div {
+        width: 4vw;
+        height: 4vw;
+      }
+    }
+  }
 }
 
-@media screen and (min-width: 1280px) and (max-width: 1919px) {
-
+@media screen and (min-width: 1280px) {
+  #main {
+    #description {
+      margin: 2vh 0 2vh 0;
+    }
+  }
 }
 
-@media screen and (min-width: 1920px) and (max-width: 5000px) {
-
+@media screen and (min-width: 1280px) {
+  #candidate {
+    width: 38vw;
+    height: 38vw;
+    max-width: 700px;
+    max-height: 700px;
+    margin-bottom: 4vw;
+  }
 }
