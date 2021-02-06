@@ -76,6 +76,8 @@
       max-height: 36px;
       display: flex;
       justify-content: center;
+      cursor: pointer;
+      box-sizing: border-box;
 
       img {
         height: 80%;
@@ -90,6 +92,18 @@
     #dislike-button {
       background-color: var(--orange);
       margin-left: 2vw;
+    }
+
+    .selected {
+      border: 2px solid white;
+    }
+
+    #vote-now {
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+      margin-left: 2vw;
+      cursor: pointer;
     }
   }
 
@@ -198,6 +212,14 @@
       div {
         width: 4vw;
         height: 4vw;
+      }
+
+      #dislike-button {
+        margin-left: 1vw;
+      }
+
+      #vote-now {
+        margin-left: 1vw;
       }
     }
   }

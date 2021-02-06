@@ -5,4 +5,6 @@ export interface Candidate {
   genre: string;
   description: string;
   photo: string;
+  likes: number;
+  dislikes: number;
 }

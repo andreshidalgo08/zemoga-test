@@ -10,16 +10,27 @@
 
       <p id="last-seen"><b>{{candidate.lastSeen}}</b> in {{candidate.genre}}</p>
 
-      <p id="description">{{candidate.description}}</p>
+      <p id="description">{{voted ? 'Thank you for voting!' : candidate.description}}</p>
 
       <div id="voting-buttons" style="display: flex; flex-direction: row;">
-        <div id="like-button">
+        <div
+            id="like-button"
+            [ngClass]="{selected: likeClicked}"
+            (click)="clickLike()">
           <img src="assets/like.svg" alt="like">
         </div>
 
-        <div id="dislike-button">
+        <div
+            id="dislike-button"
+            [ngClass]="{selected: dislikeClicked}"
+            (click)="clickDislike()">
           <img src="assets/dislike.svg" alt="like">
         </div>
+
+        <button
+            id="vote-now"
+            (click)="vote()"
+        >{{voted ? 'Vote again' : 'Vote now'}}</button>
       </div>
     </div>
 
