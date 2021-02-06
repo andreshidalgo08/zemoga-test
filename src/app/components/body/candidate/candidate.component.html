@@ -1,0 +1,42 @@
+<div id="candidate" [ngStyle]="{'background-image': 'url(' + candidate.photo + ')'}">
+  <div id="shadow">
+    <div id="current-value" [ngStyle]="{background: 'var(' + (likesPercentage >= 50 ? '--blue' : '--orange') + ')'}">
+      <img *ngIf="likesPercentage >= 50" src="assets/like.svg" alt="like">
+      <img *ngIf="likesPercentage < 50" src="assets/dislike.svg" alt="like">
+    </div>
+
+    <div id="main">
+      <p id="name">{{candidate.name}}</p>
+
+      <p id="last-seen"><b>{{candidate.lastSeen}}</b> in {{candidate.genre}}</p>
+
+      <p id="description">{{candidate.description}}</p>
+
+      <div id="voting-buttons" style="display: flex; flex-direction: row;">
+        <div id="like-button">
+          <img src="assets/like.svg" alt="like">
+        </div>
+
+        <div id="dislike-button">
+          <img src="assets/dislike.svg" alt="like">
+        </div>
+      </div>
+    </div>
+
+    <div id="results-bar">
+      <div class="like-div">
+        <img src="assets/like.svg" alt="like">
+        <p>{{likesPercentage}}%</p>
+      </div>
+
+      <div class="likes" [ngStyle]="{width: likesPercentage + '%'}"></div>
+
+      <div class="dislikes" [ngStyle]="{width: dislikesPercentage + '%'}"></div>
+
+      <div class="dislike-div">
+        <p>{{dislikesPercentage}}%</p>
+        <img src="assets/dislike.svg" alt="dislike">
+      </div>
+    </div>
+  </div>
+</div>
