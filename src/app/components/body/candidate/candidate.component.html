@@ -2,7 +2,7 @@
   <div id="shadow">
     <div id="current-value" [ngStyle]="{background: 'var(' + (likesPercentage >= 50 ? '--blue' : '--orange') + ')'}">
       <img *ngIf="likesPercentage >= 50" src="assets/like.svg" alt="like">
-      <img *ngIf="likesPercentage < 50" src="assets/dislike.svg" alt="like">
+      <img *ngIf="likesPercentage < 50" src="assets/dislike.svg" alt="dislike">
     </div>
 
     <div id="main">
