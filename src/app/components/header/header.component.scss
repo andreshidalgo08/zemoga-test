@@ -200,6 +200,11 @@
 
     #candidate-space {
       display: flex;
+
+      #candidate-card {
+        min-width: 310px;
+        min-height: 310px;
+      }
     }
 
     #closing {
@@ -208,7 +213,7 @@
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1280px) {
   #header {
     height: 90vh;
 
@@ -222,6 +227,8 @@
       #candidate-card {
         width: 56vh;
         height: 56vh;
+        min-width: 414px;
+        min-height: 414px;
 
         #candidate-main {
           padding: 2vw;

@@ -13,6 +13,10 @@
   color: var(--black);
 }
 
+button:focus {
+  outline: none;
+}
+
 @media screen and (min-width: 600px) and (max-width: 959px) {
 }
 
