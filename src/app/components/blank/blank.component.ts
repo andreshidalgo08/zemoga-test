@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute, Route, Router} from '@angular/router';
 
 @Component({
   selector: 'app-blank',
@@ -6,10 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blank.component.scss']
 })
 export class BlankComponent implements OnInit {
+  title = '';
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+    switch (this.router.url) {
+      case '/past-trials':
+        this.title = 'Past Trials';
+        break;
+      case '/how-it-works':
+        this.title = 'How It Works';
+        break;
+      default:
+        this.title = 'Blank Page';
+        break;
+    }
   }
 
 }
