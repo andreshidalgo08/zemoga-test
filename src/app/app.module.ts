@@ -10,6 +10,7 @@ import { BlankComponent } from './components/blank/blank.component';
 import { CandidateComponent } from './components/body/candidate/candidate.component';
 import {HttpClientModule} from '@angular/common/http';
 import { NotificationComponent } from './components/body/notification/notification.component';
+import { AnyoneElseComponent } from './components/body/anyone-else/anyone-else.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NotificationComponent } from './components/body/notification/notificati
     FooterComponent,
     BlankComponent,
     CandidateComponent,
-    NotificationComponent
+    NotificationComponent,
+    AnyoneElseComponent
   ],
   imports: [
     BrowserModule,
