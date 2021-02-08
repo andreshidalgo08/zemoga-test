@@ -11,6 +11,7 @@ import { CandidateComponent } from './components/body/candidate/candidate.compon
 import {HttpClientModule} from '@angular/common/http';
 import { NotificationComponent } from './components/body/notification/notification.component';
 import { AnyoneElseComponent } from './components/body/anyone-else/anyone-else.component';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AnyoneElseComponent } from './components/body/anyone-else/anyone-else.c
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -52,6 +52,9 @@
 
   #name {
     font-size: calc(2em + 1vw);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
   }
 
   #last-seen {

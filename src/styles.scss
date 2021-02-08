@@ -9,8 +9,14 @@
 }
 
 * {
-  font-family: 'Lato', sans-serif;
-  color: var(--black);
+  p {
+    font-family: 'Lato', sans-serif;
+    color: var(--black);
+  }
+}
+
+body {
+  margin: 0;
 }
 
 button:focus {

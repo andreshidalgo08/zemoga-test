@@ -23,7 +23,7 @@
       cursor: pointer;
     }
 
-    i {
+    fa-icon {
       color: white;
       cursor: pointer;
     }
@@ -57,7 +57,7 @@
         padding: 1vw;
         box-sizing: border-box;
 
-        p, b, i {
+        p, b, fa-icon {
           margin: 0;
           color: white;
         }
@@ -182,7 +182,7 @@
           margin-left: 1vw;
         }
 
-        i {
+        fa-icon {
           font-size: calc(0.7em + 1vw);
           margin-left: 1vw;
         }
